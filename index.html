@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- <img src="./assets/images/background.jpeg" alt="Background"> -->
@@ -13,8 +13,15 @@
         <header class="title-bar">
             <p class="title-bar-heading">Tic Tac Toe</p>
         </header>
+        <div id="buttonContainer" class="player-choice-container">
+            <div class="choice-box-1">
+                <button id="markerX" class="choice-x">X</button>
+            </div>
+            <div class="choice-box-2">
+                <button id="markerO" class="choice-o">O</button>
+            </div>
+        </div>
         <div class="box-grid">
-            <!-- Inset span inside div items-->
             <div class="box box-1">
                 <span class="player-click"></span>
             </div>
